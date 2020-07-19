@@ -10,6 +10,8 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes,authentication_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.authentication import SessionAuthentication
+#from django.views.decorators.csrf import csrf_exempt
+
 
 # Create your views here.
 ALLOWED_HOSTS=settings.ALLOWED_HOSTS
@@ -53,6 +55,8 @@ def tweet_action_view( request, *args, **kwargs):
         data=serializer.validated_data
         tweet_id=data.get("id")
         action=data.get("action")
+        content=data.get("content")
+
         qs=Tweet.objects.filter(id=tweet_id)
         if not qs.exists():
             return Response({},status=404)
@@ -64,9 +68,17 @@ def tweet_action_view( request, *args, **kwargs):
 
         elif action=="unlike":
             obj.likes.remove(request.user)
+
         elif action=="retweet":
-            #pending
-            pass
+            
+            new_tweet=Tweet.objects.create(
+                user=request.user,
+                parent=obj,
+                content=content
+            )
+            serializer=TweetSerializer(new_tweet)
+            return Response(serializer.data,status=200)
+            
 
     return Response({},status=200)
 
