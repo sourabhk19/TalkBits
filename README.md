@@ -10,3 +10,4 @@ A social networking app like Twitter bulit using Django and React JS
 - [Basic Retweeting feature](https://github.com/sourabhk19/TalkBits/tree/c14d49eefbddc749f35ed707fa99975b36267d53) 
 - [2 types of serializer, for creating and Read Only](https://github.com/sourabhk19/TalkBits/tree/b5708740f9f14162be7056adc34609b389b83d1f)
 - [TalkBits with Tests completed, before React JS](https://github.com/sourabhk19/TalkBits/tree/ebce2122b5e32b625d49f3efa4d31b0e913dfaf7)
+- [Created React App in TalkBits](https://github.com/sourabhk19/TalkBits/tree/5b3774d78f6a278f8b0c500cc2d46f5f486fc265)
