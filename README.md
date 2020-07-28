@@ -13,3 +13,4 @@ A social networking app like Twitter bulit using Django and React JS
 - [Created React App in TalkBits](https://github.com/sourabhk19/TalkBits/tree/5b3774d78f6a278f8b0c500cc2d46f5f486fc265)
 - [Functional Components and Rendering Tweets in React JS](https://github.com/sourabhk19/TalkBits/tree/a5cd5d509e0c2677c6f05f3489fdc0a216b8bef4)
 - [Improved Action Button with React useState Hook](https://github.com/sourabhk19/TalkBits/tree/729c273d88e3808f8940b0f87294969fdd3a77a6)
+- [React Rendered by Django](https://github.com/sourabhk19/TalkBits/tree/6d5fe96e1ff79dc69694ba5e7226ae2c37ef2dcd)
