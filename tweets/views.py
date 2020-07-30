@@ -93,11 +93,12 @@ def tweet_list_view( request, *args, **kwargs):
    
     return Response(serializer.data)
 
-@api_view(['POST'])
-@authentication_classes([SessionAuthentication])
+@api_view(['POST','GET'])
+#@authentication_classes([SessionAuthentication])
 @permission_classes([IsAuthenticated])
 def tweet_create_view(request,*args,**kwargs):
-    serializer = TweetCreateSerializer(data=request.POST)
+    print(request.data)
+    serializer = TweetCreateSerializer(data=request.data)
     if serializer.is_valid(raise_exception=True):
         serializer.save(user=request.user)
         return Response(serializer.data,status=201)

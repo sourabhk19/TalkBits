@@ -4,27 +4,25 @@ import {createTweet,loadTweets} from '../lookup'
 export function TweetsComponent(props){
   const textAreaRef = React.createRef()
   const [newTweets,setNewTweets]=useState([])
-    const handleSubmit = (event) => {
-      event.preventDefault()
-      let tempNewTweets=[...newTweets]
-      
-      const newVal = textAreaRef.current.value
-      createTweet(newVal,(response,status)=>{
-        if(status===201){
-          tempNewTweets.unshift(response)
-        }
-        else{
-          console.log(response)
-          alert("An error occured, try again")
-        }
-        
-      }
-      )
-      
+  const handleBackendUpdate = (response, status) =>{
+    // backend api response handler
+    let tempNewTweets = [...newTweets]
+    if (status === 201){
+      tempNewTweets.unshift(response)
       setNewTweets(tempNewTweets)
-      console.log(newVal)
-      textAreaRef.current.value = ''
+    } else {
+      console.log(response)
+      alert("An error occured please try again")
     }
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    const newVal = textAreaRef.current.value
+    // backend api request
+    createTweet(newVal, handleBackendUpdate)
+    textAreaRef.current.value = ''
+  }
     return <div className={props.className}>
             <div className='col-12 mb-3'>
               <form onSubmit={handleSubmit}>
