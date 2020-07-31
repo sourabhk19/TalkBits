@@ -23,3 +23,4 @@ A social networking app like Twitter bulit using Django and React JS
 - [Prepending Dynamic Retweets](https://github.com/sourabhk19/TalkBits/tree/ed36bbe731fd8f3bd804aaeff39835d6559f8427)
 - [Limited Tweet List View Filtered by username](https://github.com/sourabhk19/TalkBits/tree/2efdbc91f3771bb3603a6ac2e6d0da4602e0b9f7)
 - [Rendering limited user behaviour and tweet list](https://github.com/sourabhk19/TalkBits/tree/4821f20826ba5333bc494f7374bb28a0e0fccdff)
+- [Cleaned up the Tweets module by creating seperate files for all tweet components](https://github.com/sourabhk19/TalkBits/tree/2f0c9abe29287ccc40908fde7d6a90a949be0463)
