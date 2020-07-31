@@ -18,3 +18,4 @@ A social networking app like Twitter bulit using Django and React JS
 - [Dev Authentication -doesn't store tweets yet via React](https://github.com/sourabhk19/TalkBits/tree/abb57a70d5bb057bab9dde12549a8f3214c1eb20)
 - [Handling New Tweets and  pushing it into the database](https://github.com/sourabhk19/TalkBits/tree/93e4d3aa33ad66860f7a99974713f5a318b244aa)
 - [Tweet Action Button (using action view)](https://github.com/sourabhk19/TalkBits/tree/442fb1517b5b6ecc03aadda5691bcdedd8e676fd)
+- [Rendering Retweet action](https://github.com/sourabhk19/TalkBits/tree/a7cc32f127bdbfcaaf62ca3ee8ce76dd4f2ee505)
