@@ -20,3 +20,4 @@ A social networking app like Twitter bulit using Django and React JS
 - [Tweet Action Button (using action view)](https://github.com/sourabhk19/TalkBits/tree/442fb1517b5b6ecc03aadda5691bcdedd8e676fd)
 - [Rendering Retweet action](https://github.com/sourabhk19/TalkBits/tree/a7cc32f127bdbfcaaf62ca3ee8ce76dd4f2ee505)
 - [Improved Tweet Action Button](https://github.com/sourabhk19/TalkBits/tree/dde840452af84594046bb090414a8b721a0eb122)
+- [Limited Tweet List View Filtered by username](https://github.com/sourabhk19/TalkBits/tree/2efdbc91f3771bb3603a6ac2e6d0da4602e0b9f7)
