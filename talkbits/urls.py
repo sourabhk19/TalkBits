@@ -21,13 +21,22 @@ from tweets.views import home_view,tweet_detail_view,tweet_list_view,tweet_creat
 from django.views.generic import TemplateView
 from tweets.views import tweets_detail_view,tweets_list_view,tweets_profile_view
 
+from accounts.views import (
+    login_view,
+    logout_view,
+    register_view,
+)
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     #path('',home_view ),
     path('', tweets_list_view ),
+    path('login/', login_view),
+    path('logout/', logout_view),
+    path('register/', register_view),
     path('<int:tweet_id>',tweets_detail_view),
     path('profile/<str:username>', tweets_profile_view),
-    
+    path('api/tweets/',include('tweets.api.urls'))
     
     #path('react/', TemplateView.as_view(template_name='react_via_dj.html')),
     #path('tweets/<int:tweet_id>',tweet_detail_view),
@@ -35,7 +44,7 @@ urlpatterns = [
     #path('create-tweet',tweet_create_view),
     #path('api/tweets/<int:tweet_id>/delete',tweet_delete_view),
     #path('api/tweets/action/',tweet_action_view),
-    path('api/tweets/',include('tweets.api.urls'))
+ 
 ]
 
 if settings.DEBUG:

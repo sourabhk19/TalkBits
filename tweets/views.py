@@ -108,7 +108,7 @@ def tweet_list_view( request, *args, **kwargs):
     return Response(serializer.data)
 
 @api_view(['POST','GET'])
-#@authentication_classes([SessionAuthentication])
+@authentication_classes([SessionAuthentication])
 @permission_classes([IsAuthenticated])
 def tweet_create_view(request,*args,**kwargs):
     print(request.data)
