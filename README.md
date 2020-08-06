@@ -26,3 +26,4 @@ A social networking app like Twitter bulit using Django and React JS
 - [Cleaned up the Tweets module by creating seperate files for all tweet components](https://github.com/sourabhk19/TalkBits/tree/2f0c9abe29287ccc40908fde7d6a90a949be0463)
 - [Rendering and Linking Individual Tweets](https://github.com/sourabhk19/TalkBits/tree/93a0796d56e58027b61e55287fdec09121e4299c)
 - [API urls and views cleaned up](https://github.com/sourabhk19/TalkBits/tree/a565efb522ee62e5921c51f00e7657d277bbead5)
+- [Follow Button implemented along with feed](https://github.com/sourabhk19/TalkBits/tree/255d81507467ca7d54a6404b29bc3640f425c377)
