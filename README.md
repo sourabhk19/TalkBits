@@ -3,7 +3,7 @@ A social networking app like Twitter. At the moment, the app supports Likes, Unl
 This project was built to better understand and implement frontend technologies Django, React JS and SQLite (Database).
 
 ![Web App Screenshot](https://github.com/sourabhk19/TalkBits/blob/master/readme_images/webapp_screenshot2.PNG)
-***Work in progress***
+
 
 
 
