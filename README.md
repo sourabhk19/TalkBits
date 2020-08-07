@@ -1,5 +1,5 @@
 # TalkBits  
-A social networking app like Twitter bulit using Django and React JS
+A social networking app like Twitter. At the moment, the app supports Likes, Unlikes, Retweets and Follower/Following features. More to be added. This project was built to better understand and implement frontend technologies Django, React JS and SQLite (Database).
 
 ![Web App Screenshot](https://github.com/sourabhk19/TalkBits/blob/master/readme_images/webapp_screenshot1.PNG)
 ***Work in progress***
