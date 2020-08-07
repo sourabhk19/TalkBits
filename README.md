@@ -2,7 +2,7 @@
 A social networking app like Twitter. At the moment, the app supports Likes, Unlikes, Retweets and Follower/Following features. The app also shows the tweets of the profiles followed. More features like Real-time topic based feed to be added. 
 This project was built to better understand and implement frontend technologies Django, React JS and SQLite (Database).
 
-![Web App Screenshot](https://github.com/sourabhk19/TalkBits/blob/master/readme_images/webapp_screenshot1.PNG)
+![Web App Screenshot](https://github.com/sourabhk19/TalkBits/blob/master/readme_images/webapp_screenshot2.PNG)
 ***Work in progress***
 
 
